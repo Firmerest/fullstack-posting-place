@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+
 #linkContainer
 {
     text-align:center;
@@ -6,6 +8,11 @@
 a
 {
     color:lightblue;
+}
+
+#rubikFont
+{
+    font-family:"Rubik Maze" 
 }
 
 #homeBtn
