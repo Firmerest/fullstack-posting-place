@@ -1,17 +1,35 @@
-<h1>Web Development Summer (Working Title)</h1>
-<p>This project is a constantly evolving project for my Web Development course at the University of North Alabama</p>
-<h2>Attribution</h2>
-<p>This project is made possibly by file outlines projected by <a href="https://github.com/barrycumbie">barrycumbie<a> <br>
-Alongside the resources by <a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://www.codecademy.com">Code Academy</a>
-Lastly, the documentation for <a href="https://getbootstrap.com/">Bootstrap</a> which this project relies on.
-</p>
+<h1>Posting Place</h1>
+<p> > This project is a constantly evolving project for my Web Development course at the University of North Alabama</p>
+
+<h2>Authorship</h2>
+<p> > Project by Connor Smith </p>
+<p> > Version 1.1 completed 7/21/2026</p>
+
+
 
 <h3>User Story</h3>
 <p> As a web app user, <br>
 	I want to log into the app, <br>
-	To (as is currently planned) keep up with my favorite niche internet influencer. <br>
-	<sub>Think like the Jeremy Renner app</sub>
+	and post my thoughts for myself or others to see.<br>
 </p>
+
+<h3> Narrative </h3>
+<p>
+	I love posting on different social media apps, but I just can't get enough of scrolling through posts and making some of my own. Here, I am giving an additional place to post my thoughts for others to see.
+</p>
+
+<h3>Attribution</h3>
+<p>This project is made possible by:
+	<ul>
+		<li>file outlines provided by <a href="https://github.com/barrycumbie">barrycumbie<a> <br></li>
+		<li>resources by <a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://www.codecademy.com">Code Academy</a> </li>
+		<li><a href="https://getbootstrap.com/">Bootstrap</a> which this project heavily relies on </li>
+	</ul>
+	
+</p>
+
+<h3>Resources</h3>
+<p>The archived, "alfa" iteration of this project, is available <a href="https://github.com/Firmerest/charlie-posting-place/tree/alfa" target="_blank">here</a></p>
 
 <h3>Project Directory Structure:</h3>
 
