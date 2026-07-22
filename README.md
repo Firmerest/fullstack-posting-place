@@ -10,7 +10,7 @@ Lastly, the documentation for <a href="https://getbootstrap.com/">Bootstrap</a> 
 <p> As a web app user, <br>
 	I want to log into the app, <br>
 	To (as is currently planned) keep up with my favorite niche internet influencer. <br>
-	<sub>Think like the Jeremy Renner app</sub>
+	<sub>Think like the (now unavailable) <a href="https://en.wikipedia.org/wiki/Jeremy_Renner_Official">Jeremy Renner app</a></sub>
 </p>
 
 <h3>Project Directory Structure:</h3>
