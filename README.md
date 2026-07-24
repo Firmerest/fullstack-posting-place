@@ -5,7 +5,7 @@
 <p> > Project by Connor Smith </p>
 <p> > Version 1.1 completed 7/21/2026</p>
 
-
+<h4>This project is currently hosted on <a href="https://firmerest.github.io/charlie-posting-place/" target="_blank">Github Pages</a> and through the <a href="http://34.174.255.15/" target="_blank">Google Cloud Platform</a></h4>
 
 <h3>User Story</h3>
 <p> As a web app user, <br>
