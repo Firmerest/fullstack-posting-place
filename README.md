@@ -21,9 +21,9 @@
 <h3>Attribution</h3>
 <p>This project is made possible by:
 	<ul>
-		<li>file outlines provided by <a href="https://github.com/barrycumbie">barrycumbie<a> <br></li>
-		<li>resources by <a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://www.codecademy.com">Code Academy</a> </li>
-		<li><a href="https://getbootstrap.com/">Bootstrap</a> which this project heavily relies on </li>
+		<li>file outlines provided by <a href="https://github.com/barrycumbie" target="_blank">barrycumbie<a> <br></li>
+		<li>resources by <a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://www.codecademy.com" target="_blank">Code Academy</a> </li>
+		<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> which this project heavily relies on </li>
 	</ul>
 	
 </p>
