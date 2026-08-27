@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Admin Panel</title>
+</head>
+
+<body>
+  <h1 id="adminHead">Welcome, Administrator (Username)</h1>
+
+  <a href="../index.html">Home</a>
+
+  <script>
+    let isAuthN = sessionStorage.getItem('sessionAuthN');
+    console.log(isAuthN);
+
+
+    // isAutN => true if it has anything at all in it. 
+
+    if (isAuthN === 'true') {
+      document.getElementById('adminHead').innerText = 'Welcome, Administrator Barry.'
+    
+    }
+    else {
+      document.getElementById('adminHead').innerText = 'Access Denied.'
+      console.log("You do not have a valid session authorization number: " + isAuthN)
+    }
+  </script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  
+
+</body>
+
+</html>

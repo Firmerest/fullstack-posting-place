@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- This is the head we use on practically every file, only modifying the title of the tab in each-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Charlie Posting Place</title>
+</head>
+
+<body>
+  <h1>Posting Place</h1>
+
+  <!--So this is the primary way of navigation, can be cleaned up later, pretty self-explanatory -->
+  <div id="linkContainer">
+    <a id="homeBtn" href="pages/content.html">Home</a> | 
+    <a href="pages/auth.html">login/logout</a> | 
+    <a href="pages/admin.html">Admin</a>
+  </div>
+  
+
+  <!-- <p id="logoutState">logged out...login btn</p> -->
+  <p id="rubikFont"></p> <!-- Need to attribute the google fonts library, too-->
+
+  <script>
+    let isAuthN = sessionStorage.getItem('sessionAuthN');
+    console.log(isAuthN);
+
+    // isAutN => true if it has anything at all in it. 
+
+    if (isAuthN === 'true') {
+      document.getElementById('loginState').innerText = 'Hello, Barry.'
+    }
+    else {
+      document.getElementById('loginState').innerText = 'Please Login'
+    }
+  </script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  
+
+</body>
+
+</html>
