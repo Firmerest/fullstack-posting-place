@@ -17,7 +17,7 @@
   published docs               [GitHub Pages](https://firmerest.github.io/fullstack-posting-place/) <br>
   CI/CD workflow               [`deploy.yml`](https://github.com/Firmerest/fullstack-posting-place/blob/main/.github/workflows/deploy-main-to-gcp.yml) <br>
   successful PROD deployment   [GitHub Action](https://github.com/Firmerest/fullstack-posting-place/actions/runs/34925893555) <br>
-  resolved GOLF issue          [issue \#](https://github.com/Firmerest/fullstack-posting-place/issues/1) <br>
+  resolved GOLF issue          [issue \#1](https://github.com/Firmerest/fullstack-posting-place/issues/1) <br>
 
 ### user story
 
