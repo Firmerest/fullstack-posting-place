@@ -42,7 +42,7 @@ jobs:
           chmod 644 ~/.ssh/known_hosts
           
           # safer than StrictHostKeyChecking=no
-          #ssh-keyscan -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+         
           #chmod 644 ~/.ssh/known_hosts
           # create the runner's SSH directory
           #mkdir -p ~/.ssh
@@ -61,7 +61,7 @@ jobs:
           # safer than disabling host-key checking
           #
           # later:
-          # ssh-keyscan -H "${{ vars.SSH_HOST }}" >> ~/.ssh/known_hosts
+         
 
           # known_hosts is not secret; it only needs to be readable
           # chmod 644 ~/.ssh/known_hosts
