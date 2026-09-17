@@ -6,8 +6,8 @@ name: deploy-main-to-gcp.yml
 # ============================================================
 
 on:
-  push:
-    branches: [main]
+#  push:
+#    branches: [main]
   workflow_dispatch:
 
 
@@ -32,18 +32,30 @@ jobs:
         shell: bash
         run: |
 
-          # create the runner's SSH directory
           mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+          ssh-keyscan -H 8.234.41.172 >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+          
+          # safer than StrictHostKeyChecking=no
+          #ssh-keyscan -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+          #chmod 644 ~/.ssh/known_hosts
+          # create the runner's SSH directory
+          #mkdir -p ~/.ssh
 
           # owner = rwx | group = none | others = none
-          chmod 700 ~/.ssh
+          #chmod 700 ~/.ssh
 
           # write our PRIVATE deployment key from GitHub Secrets
           # use a generic name because the key may be ED25519, RSA, etc.
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          #echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
 
           # private key should only be readable/writable by its owner
-          chmod 600 ~/.ssh/deploy_key
+          #chmod 600 ~/.ssh/deploy_key
 
           # record the VM's SSH host key
           # safer than disabling host-key checking
@@ -51,11 +63,8 @@ jobs:
           # later:
           # ssh-keyscan -H "${{ vars.SSH_HOST }}" >> ~/.ssh/known_hosts
 
-          # to be put back in later
-          ssh-keyscan -H 34.106.229.37 >> ~/.ssh/known_hosts
-
           # known_hosts is not secret; it only needs to be readable
-          chmod 644 ~/.ssh/known_hosts
+          # chmod 644 ~/.ssh/known_hosts
 
 
       # ======================================================
