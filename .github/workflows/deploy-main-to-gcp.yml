@@ -35,8 +35,8 @@ jobs:
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
 
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/golf_key
+          chmod 600 ~/.ssh/golf_key
 
           ssh-keyscan -H 34.118.169.254 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
@@ -52,7 +52,7 @@ jobs:
 
           # write our PRIVATE deployment key from GitHub Secrets
           # use a generic name because the key may be ED25519, RSA, etc.
-          #echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          #echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/golf_key
 
           # private key should only be readable/writable by its owner
           #chmod 600 ~/.ssh/deploy_key
@@ -97,7 +97,7 @@ jobs:
           # use our private key to authenticate to the VM
           # ==================================================
 
-          ssh -i ~/.ssh/deploy_key -T "$SSH_USER@$SSH_HOST" <<EOF
+          ssh -i ~/.ssh/golf_key -T "$SSH_USER@$SSH_HOST" <<EOF
 
             # stop deployment if a command fails
             set -e
