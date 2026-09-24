@@ -14,9 +14,9 @@
   DEV codebase                 [`dev`](https://github.com/Firmerest/fullstack-posting-place/tree/dev) <br>
   DEV server                   [Render](https://fullstack-posting-place.onrender.com/pages/auth.html) <br>
   docs                         [`docs/`](https://github.com/Firmerest/fullstack-posting-place/tree/main/docs/) <br>
-  published docs               [GitHub Pages](https://firmerest.github.io/fullstack-posting-place/) <br>
+  published docs               [GitHub Pages](https://firmerest.github.io/fullstack-posting-place/docs) <br>
   CI/CD workflow               [`deploy.yml`](https://github.com/Firmerest/fullstack-posting-place/blob/main/.github/workflows/deploy-main-to-gcp.yml) <br>
-  successful PROD deployment   [GitHub Action](https://github.com/Firmerest/fullstack-posting-place/actions/runs/34925893555) <br>
+  successful PROD deployment   [GitHub Action](https://github.com/Firmerest/fullstack-posting-place/actions/workflows/another.yaml) <br>
   resolved GOLF issue          [issue \#1](https://github.com/Firmerest/fullstack-posting-place/issues/1) <br>
 
 ### user story
